@@ -4,8 +4,9 @@ import { galleryItems } from './gallery-items.js';
 
 console.log(galleryItems);
 
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.esm';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 // Change code below this line
 
 function creatGalleryItemsMarkup(galleryItems) {
@@ -24,8 +25,6 @@ const galleryList = document.querySelector('.gallery');
 // galleryList.innerHTML = creatGalleryItemsMarkup(galleryItems);
 galleryList.insertAdjacentHTML('beforeend', itemsMarkup);
 
-
-  
 const lightbox = new SimpleLightbox('.gallery a', {
   captions: true,
   captionsData: 'alt',
