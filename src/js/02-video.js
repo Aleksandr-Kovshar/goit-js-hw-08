@@ -13,5 +13,12 @@ function onTimePlay (timeupdate){
     localStorage.setItem('videoplayer-current-time', timeupdate.seconds);
 };
 
-player.setCurrentTime(savedTime)
+if(savedTime)
+        { 
+            player.setCurrentTime(savedTime)
+        }
+
+
+
+
 
